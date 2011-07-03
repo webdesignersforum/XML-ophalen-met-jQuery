@@ -4,14 +4,14 @@
      <titel>Webdesignersforum</titel>
      	<url>http://www.webdesignersforum.nl</url>
      	<omschrijving>
-      	 <tekst>Dit is een omschrijving</tekst>
+      	      <tekst>Dit is een omschrijving</tekst>
      	</omschrijving>
    </nieuws>
 	<nieuws id="1">
-     <titel>XML ophalen met jQuery</titel>
+        <titel>XML ophalen met jQuery</titel>
      	<url>http://www.webdesignersforum.nl</url>
      	<omschrijving>
-     		<tekst>Tutorial over het ophalen van XML met de jQuery library</tekst>
+             <tekst>Tutorial over het ophalen van XML met de jQuery library</tekst>
      	</omschrijving>
    </nieuws>
 </nieuwsberichten>
