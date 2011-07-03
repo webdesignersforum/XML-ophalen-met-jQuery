@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<title>XML ophalen doormiddel van jQuery</title>
+<script>
+$(document).ready(function(){
+		$.ajax({
+type: "GET",
+		url: "nieuws.xml",
+		dataType: "xml",
+success: function(xml) {
+		$(xml).find('nieuws').each(function(){
+   var id = $(this).attr('id');
+		   var titel = $(this).find('titel').text();
+   var url = $(this).find('url').text();
+	   $('<div class="items" id="link_'+id+'"></div>').html('<a href="'+url+'">'+titel+'</a>').appendTo('#content');
+
+		$(this).find('omschrijving').each(function(){
+var tekst = $(this).find('tekst').text();
+$('<div class="tekst"></div>').html(tekst).appendTo('#link_'+id);
+});
+
+
+});
+
+
+		}
+});
+
+});
+</script>
+     
+</head>
+<body>
+	<div id="content">
+     		<h1>Webdesignersforum – XML ophalen doormiddel van jQuery</h1>
+</div>
+
+
+</body>
+</html>

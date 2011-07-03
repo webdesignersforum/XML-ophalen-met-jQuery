@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <nieuwsberichten>
+   <nieuws id="0">
+     <titel>Webdesignersforum</titel>
+     	<url>http://www.webdesignersforum.nl</url>
+     	<omschrijving>
+      	 <tekst>Dit is een omschrijving</tekst>
+     	</omschrijving>
+   </nieuws>
+	<nieuws id="1">
+     <titel>XML ophalen met jQuery</titel>
+     	<url>http://www.webdesignersforum.nl</url>
+     	<omschrijving>
+     		<tekst>Tutorial over het ophalen van XML met de jQuery library</tekst>
+     	</omschrijving>
+   </nieuws>
+</nieuwsberichten>
